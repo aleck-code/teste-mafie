@@ -1,1 +1,1 @@
-worker: python log.py
+worker: python bot.py
