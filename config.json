@@ -1,0 +1,37 @@
+{
+  "token": "OTY3ODI5NTk5NTU3OTEwNTY4.GqmVuJ.CXNYTIKYL7J4v2bwMTokdYiJGqBI5zoHv5m7GQ",
+  "prefix": "!",
+  "testy_channel": "976267765897912330",
+  "language": "en",
+  "cooldown": "1",
+  "role": "👥 | Guest",
+
+  "questions": [
+    "Care este MOTO-ul mafiei?",
+    "Cu ce esti sanctionat daca din cauza ta mafia primeste Warn sau Avertisment?",
+    "Ce se intampla daca faci RDM, FailRP sau Metagaming de fata cu un Secretar?",
+    "Care sunt lucrurile obligatorii pe care trebuie sa le ai la WAR?",
+    "Ce inseamna Olympic Swim?",
+    "Ce inseamna No-Fear?",
+    "Ai voie sa comiti o infractiune pe un teritoriu care nu ne apartine?",
+    "Cum vad teritoriile?",
+    "Ce inseamna Powergaming? Da exemplu de o situatie",
+    "Ce inseamna Metagaming?",
+    "In ce interval orar se desfasoara war-urile si in ce zile?",
+    "Ce inseamna IC dar OOC ?",
+    "Ai voie sa faci VDM la war?",
+    "Daca gigel care a platit taxa vine la mine pe teritoriu si ma roaga sa-l protejez, cum procedez?",
+    "Cu ce esti sanctionat daca nu porti imbracamintea mafiei?",
+    "Transmiterea de informatii interne sau divulgarea catre alte persoane cum se sanctioneaza?",
+    "Zi 4 motive pentru care primesti FW.",
+    "Ce se intampla daca nu participi la Sedintele anuntate In-Game sau pe canalul de Anunturi?",
+    "Ce trebuie sa faci in momentul in care esti cu cineva pe discord si incepi un roleplay?",
+    "Ultima intrebare (a se mentiona): Ai citit regulamentul?"
+  ],
+
+  "aliases": {
+    "testy": [],
+    "accepta": [],
+    "respinge": []
+  }
+}
