@@ -49,7 +49,7 @@ class testy(commands.Cog):
         await ctx.author.send(
             embed=discord.Embed(
                 description=m,
-                color=0xf7072b))
+                color=0x69442f))
         await ctx.message.add_reaction('✅')
 
         def check(m):
