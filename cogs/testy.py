@@ -59,7 +59,7 @@ class testy(commands.Cog):
             nam += 1
             await ctx.author.send(embed=discord.Embed(
                     description=i,
-                    color=0xf7072b).set_author(name=f"{nam}/{len(config['questions'])}"))
+                    color=0x69442f).set_author(name=f"{nam}/{len(config['questions'])}"))
             try:
                 msg = await self.client.wait_for('message', timeout=60.0, check=check)
             except asyncio.TimeoutError:
@@ -68,7 +68,7 @@ class testy(commands.Cog):
                     m = "لقد تجاوزت الوقت المحدد للإرسال"
                 await ctx.author.send(embed=discord.Embed(
                     description=m,
-                    color=0xf7072b))
+                    color=0x69442f))
                 return
             else:
                 answers.append(msg.content)
@@ -129,7 +129,7 @@ class testy(commands.Cog):
         elif isinstance(error, commands.CommandInvokeError):
             await ctx.send(embed=discord.Embed(
                 description="❌ Te rugam sa iti deschizi DM-ul inainte de a reaplica in 24 de ore",
-                color=0xf7072b
+                color=0x69442f
             ))
         if isinstance(error, commands.CommandOnCooldown):
             m, s = divmod(error.retry_after, 60)
@@ -137,7 +137,7 @@ class testy(commands.Cog):
             await ctx.send(embed=discord.Embed(
                 description="❌ Se pare ca ai raspuns gresit. Reaplica din nou in {}".format(
                     "%d hour, %02d minutes, %02d seconds" % (h, m, s)),
-                color=0xf7072b
+                color=0x69442f
             ))
         else:
             pass
@@ -151,7 +151,7 @@ class testy(commands.Cog):
             m = "✅ تم القبول بنجاح"
         await ctx.send(embed=discord.Embed(
             description=m,
-            color=0x03ff74
+            color=0x69442f
         ))
         await member.add_roles(discord.utils.get(member.guild.roles, name=config['role']))
         m = "✅ Testul tau a fost acceptat"
@@ -159,7 +159,7 @@ class testy(commands.Cog):
             m = "✅ تم قبولك بنجاح"
         await member.send(embed=discord.Embed(
             description=m,
-            color=0x03ff74
+            color=0x69442f
         ))
 
     @commands.has_permissions(administrator=True)
@@ -168,7 +168,7 @@ class testy(commands.Cog):
         if isinstance(error, commands.MissingRequiredArgument):
             await ctx.send(embed=discord.Embed(
                 description="{}a <member or DI>".format(self.client.command_prefix),
-                color=0xf7072b
+                color=0x69442f
             ))
         if isinstance(error, commands.MissingPermissions):
             pass
@@ -182,14 +182,14 @@ class testy(commands.Cog):
             m = f"✅ تم رفض {member.mention}"
         await ctx.send(embed=discord.Embed(
             description=m,
-            color=0x03ff74
+            color=0x69442f
         ))
         m = f"⬇️ Motivul respingerii\n{reason}\nDaca ai ceva impotriva, contacteaza-l pe {ctx.author}"
         if config['language'] == "ar":
             m = f"❌ للاسف لقد تم رفضك للأسف بسبب:\n{reason}\nإذا كان لديك أي اعتراضات ، يرجى التواصل مع {ctx.author}"
         await member.send(embed=discord.Embed(
             description=m,
-            color=0xf7072b
+            color=0x69442f
         ))
 
     @commands.has_permissions(administrator=True)
@@ -198,7 +198,7 @@ class testy(commands.Cog):
         if isinstance(error, commands.MissingRequiredArgument):
             await ctx.send(embed=discord.Embed(
                 description="{}respinge <member or DI>".format(self.client.command_prefix),
-                color=0xf7072b
+                color=0x69442f
             ))
         if isinstance(error, commands.MissingPermissions):
             pass
